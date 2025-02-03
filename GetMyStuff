@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Output file
+OUTPUT_FILE="MyStuff"
+
+# Get User ID
+id -u > "$OUTPUT_FILE"
+
+# Get Primary Group ID
+id -g >> "$OUTPUT_FILE"
+
+# Get All Group Names
+id -Gn >> "$OUTPUT_FILE"
+
+# Get Absolute Path of Shell
+echo $SHELL >> "$OUTPUT_FILE"
+
+# Get Absolute Path of Home Directory
+echo $HOME >> "$OUTPUT_FILE"
+
+# Get PATH Environment Variable
+echo $PATH >> "$OUTPUT_FILE"
+
+# Print confirmation
+echo "System information saved to $OUTPUT_FILE"
+
+
